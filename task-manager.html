@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Task Manager</title>
+  <link rel="stylesheet" href="css/task-style.css" />
+</head>
+<body>
+  <h1>Simple Task Manager</h1>
+  <div class="controls">
+    <input type="text" id="taskInput" placeholder="Enter a new task..." />
+    <button class="add-btn" onclick="addTask()">Add Task</button>
+  </div>
+  <div class="controls">
+    <button class="filter-btn" onclick="setFilter('all')" id="filter-all">All</button>
+    <button class="filter-btn" onclick="setFilter('pending')" id="filter-pending">Pending</button>
+    <button class="filter-btn" onclick="setFilter('completed')" id="filter-completed">Completed</button>
+  </div>
+  <ul id="taskList"></ul>
+
+  <script src="js/task-script.js"></script>
+</body>
+</html>
